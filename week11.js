@@ -63,19 +63,21 @@ document.querySelector('.b-5').onclick = makeFive;
 //Используйте метод getElementById, чтобы найти элемент <img>. При нажатии на кнопку измените его атрибут src на "newimage.jpg", а атрибут alt на "Новое изображение".
 //Подсказка: Используйте знак равенства для изменения атрибутов элемента
 
-// function makeSix() {
-// 	var img = document.getElementById('#practicum6');
-// 	img.src = 'newimage.jpg';
-// 	img.alt = 'Новое изображение';
-// }
-// document.querySelector('.b-6').onclick = makeSix;
+function makeSix() {
+	var img = document.getElementById('practicum6');
+	img.src = 'newimage.jpg';
+	img.alt = 'Новое изображение';
+}
+document.querySelector('.b-6').onclick = makeSix;
 
 //Задание 7
 //Используйте метод querySelector, чтобы найти элемент <a>. При нажатии на кнопку измените его href на "https://www.google.com", а название ссылки на "Ссылка на Google".
 //Подсказка: Используйте знак равенства для изменения атрибутов элемента и метод для изменения текстового содержимого элемента
 
 function makeSeven() {
-	//Ваш код
+	const a = document.querySelector('#practicum7');
+	a.src = 'https://www.google.com';
+	a.textContent = 'Ссылка на Google';
 }
 
 document.querySelector('.b-7').onclick = makeSeven;
@@ -136,14 +138,14 @@ function makeEleven() {
 
 document.querySelector('.b-11').onclick = makeEleven;
 
-//Задание 12
-//Используйте метод querySelector, чтобы найти элемент <div>. При клике на этот элемент измените его ширину на 400px и высоту на 200px. При повторном клике верните его размеры в исходное состояние.
-//Подсказка: Используйте метод toggle() для добавления/удаления класса, который изменяет размеры элемента
+// Задание 12
+// Используйте метод querySelector, чтобы найти элемент <div>. При клике на этот элемент измените его ширину на 400px и высоту на 200px. При повторном клике верните его размеры в исходное состояние.
+// Подсказка: Используйте метод toggle() для добавления/удаления класса, который изменяет размеры элемента
 
-// function makeTwelve() {
-// 	const div = document.querySelector('#practicum12');
-// 	div.classList.add('.resizeable.large');
-// }
+function makeTwelve() {
+	const div = document.querySelector('.resizeable');
+	div.classList.toggle('resizeable-large');
+}
 
 //Задание 13
 //Используйте метод `getElementsByTagName`, чтобы найти первый элемент <ol>. Затем измените его текст на "Первый!".
@@ -155,7 +157,6 @@ function makeThirteen() {
 	ol.textContent = 'Первый!';
 }
 document.querySelector('.b-13').onclick = makeThirteen;
-//в интернете только нашла что нужно добавить [0], ни в уроке(насколько я внимательна, конечно), ни в подсказках этого не было
 
 //Задание 14
 //Используйте метод querySelectorAll, чтобы найти все элементы <p> на странице. Затем измените их текст на "Огого, что могу!".

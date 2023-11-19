@@ -124,7 +124,7 @@ div.section {
 	cursor: pointer;
 }
 
-.resizeable.large {
+.resizeable-large {
 	background-color: #33c3f0;
 	width: 400px;
 	height: 200px;
